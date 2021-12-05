@@ -9,8 +9,12 @@ Steps to use the cod:
 8. Now register and login!!
 
 Admin Credentials:
-  Username: admin
-  Password: admin@123
+ 
+Username: admin
+ 
+Password: admin@123
+
+
 
 Assets: Images used in web
 
