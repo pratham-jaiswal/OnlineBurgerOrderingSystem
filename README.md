@@ -1,3 +1,16 @@
+Steps to use the cod:
+1. Download & Install: XAMPP in C:\xampp (default)
+2. Clone this repository in C:\xampp\htdocs
+3. Run XAMPP and start "Apache" and "MySQL"
+4. Open the link "localhost/phpmyadmin/"
+5. Click on new at sidebar and create a database name "burgerorderingsystem"
+6. After clicking database click import and select the file "burgerorderingsystem.sql"
+4. Open the link "localhost/OnlineBurgerOrderingSystem/"
+8. Now register and login!!
+
+Admin Credentials:
+Username: admin
+Password: admin@123
 
 
 Assets: Images used in web
