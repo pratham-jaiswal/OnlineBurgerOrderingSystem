@@ -8,13 +8,7 @@ Steps to use the cod:
 4. Open the link "localhost/OnlineBurgerOrderingSystem/"
 8. Now register and login!!
 
-Admin Credentials:
- 
-Username: admin
- 
-Password: admin@123
-
-
+Admin Credentials: admin, admin@123
 
 Assets: Images used in web
 
