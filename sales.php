@@ -39,6 +39,7 @@ require_once "config.php";
         </ul>
     </nav>
     <div class="container">
+        <form action="" method="post">
         <section class="sales-page"><div class="sales-table" style="margin-top: 1%;">
             <div class="container">
                 <div class="orders" style="margin-left: 5%; margin-top 4%;">
@@ -55,14 +56,14 @@ require_once "config.php";
                             <?php 
                             else: ?>
                                 <tr>
-                                <th>ID</th>
-                                <th>Order ID</th>
-                                <th>Username</th>
-                                <th>Full Name</th>
-                                <th>Item</th>
-                                <th>Quantity</th>
-                                <th>Email</th>
-                                <th>Address</th>
+                                <th style="border: 1px solid black; padding: 10px;">ID</th>
+                                <th style="border: 1px solid black; padding: 10px;">Order ID</th>
+                                <th style="border: 1px solid black; padding: 10px;">Username</th>
+                                <th style="border: 1px solid black; padding: 10px;">Full Name</th>
+                                <th style="border: 1px solid black; padding: 10px;">Item</th>
+                                <th style="border: 1px solid black; padding: 10px;">Quantity</th>
+                                <th style="border: 1px solid black; padding: 10px;">Email</th>
+                                <th style="border: 1px solid black; padding: 10px;">Address</th>
                             <?php
                                 $oid = ''; $f=0;
                                 while($ord = mysqli_fetch_assoc($results)): 
@@ -75,14 +76,14 @@ require_once "config.php";
                                     endif;
                                     ?>
                                     <tr>
-                                        <td><?php echo $ord["id"];?></td>
-                                        <td><?php echo $ord["order_id"];?></td>
-                                        <td><?php echo $ord["username"];?></td>
-                                        <td><?php echo $ord["fullname"];?></td>
-                                        <td><?php echo $ord["item"];?></td>
-                                        <td><?php echo $ord["quantity"];?></td>
-                                        <td><?php echo $ord["email"];?></td>
-                                        <td><?php echo $ord["address"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["id"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["order_id"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["username"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["fullname"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["item"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["quantity"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["email"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["address"];?></td>
                                         <td style="border: none;">
                                             <a style="color: black; text-decoration: none;" onmouseover="style='color: blue; text-decoration: none;'"return; onmouseout="style='color: black; text-decoration: none;'"return; href="outForDelivery.php?order_id=<?=$ord['order_id']?>"><i class="fas fa-truck"></i></a>
                                         </td>
@@ -107,14 +108,14 @@ require_once "config.php";
                             <?php 
                             else: ?>
                                 <tr>
-                                <th>ID</th>
-                                <th>Order ID</th>
-                                <th>Username</th>
-                                <th>Full Name</th>
-                                <th>Item</th>
-                                <th>Quantity</th>
-                                <th>Email</th>
-                                <th>Address</th>
+                                <th style="border: 1px solid black; padding: 10px;">ID</th>
+                                <th style="border: 1px solid black; padding: 10px;">Order ID</th>
+                                <th style="border: 1px solid black; padding: 10px;">Username</th>
+                                <th style="border: 1px solid black; padding: 10px;">Full Name</th>
+                                <th style="border: 1px solid black; padding: 10px;">Item</th>
+                                <th style="border: 1px solid black; padding: 10px;">Quantity</th>
+                                <th style="border: 1px solid black; padding: 10px;">Email</th>
+                                <th style="border: 1px solid black; padding: 10px;">Address</th>
                             <?php
                                 $oid = ''; $f=0;
                                 while($ord = mysqli_fetch_assoc($results)): 
@@ -127,14 +128,14 @@ require_once "config.php";
                                     endif;
                                     ?>
                                     <tr>
-                                        <td><?php echo $ord["id"];?></td>
-                                        <td><?php echo $ord["order_id"];?></td>
-                                        <td><?php echo $ord["username"];?></td>
-                                        <td><?php echo $ord["fullname"];?></td>
-                                        <td><?php echo $ord["item"];?></td>
-                                        <td><?php echo $ord["quantity"];?></td>
-                                        <td><?php echo $ord["email"];?></td>
-                                        <td><?php echo $ord["address"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["id"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["order_id"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["username"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["fullname"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["item"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["quantity"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["email"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["address"];?></td>
                                         <td style="border: none;">
                                             <a style="color: black; text-decoration: none;" onmouseover="style='color: blue; text-decoration: none;'"return; onmouseout="style='color: black; text-decoration: none;'"return; href="delivered.php?order_id=<?=$ord['order_id']?>"><i class="fas fa-truck-loading"></i></a>
                                         </td>
@@ -159,14 +160,14 @@ require_once "config.php";
                             <?php 
                             else: ?>
                                 <tr>
-                                <th>ID</th>
-                                <th>Order ID</th>
-                                <th>Username</th>
-                                <th>Full Name</th>
-                                <th>Item</th>
-                                <th>Quantity</th>
-                                <th>Email</th>
-                                <th>Address</th>
+                                <th style="border: 1px solid black; padding: 10px;">ID</th>
+                                <th style="border: 1px solid black; padding: 10px;">Order ID</th>
+                                <th style="border: 1px solid black; padding: 10px;">Username</th>
+                                <th style="border: 1px solid black; padding: 10px;">Full Name</th>
+                                <th style="border: 1px solid black; padding: 10px;">Item</th>
+                                <th style="border: 1px solid black; padding: 10px;">Quantity</th>
+                                <th style="border: 1px solid black; padding: 10px;">Email</th>
+                                <th style="border: 1px solid black; padding: 10px;">Address</th>
                             <?php
                                 $oid = ''; $f=0;
                                 while($ord = mysqli_fetch_assoc($results)): 
@@ -179,14 +180,14 @@ require_once "config.php";
                                     endif;
                                     ?>
                                     <tr>
-                                        <td><?php echo $ord["id"];?></td>
-                                        <td><?php echo $ord["order_id"];?></td>
-                                        <td><?php echo $ord["username"];?></td>
-                                        <td><?php echo $ord["fullname"];?></td>
-                                        <td><?php echo $ord["item"];?></td>
-                                        <td><?php echo $ord["quantity"];?></td>
-                                        <td><?php echo $ord["email"];?></td>
-                                        <td><?php echo $ord["address"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["id"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["order_id"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["username"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["fullname"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["item"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["quantity"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["email"];?></td>
+                                        <td style="border: 1px solid black; padding: 10px;"><?php echo $ord["address"];?></td>
                             <?php 
                                 endwhile; 
                             endif; ?>
@@ -195,6 +196,7 @@ require_once "config.php";
                 </div>
             </div>
         </section>
+        </form>
     </div>
     <script src="https://kit.fontawesome.com/6f42fc440c.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
