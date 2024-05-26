@@ -1,43 +1,69 @@
-Steps to use the cod:
-1. Download & Install: XAMPP in C:\xampp (default)
-2. Clone this repository in C:\xampp\htdocs
-3. Run XAMPP and start "Apache" and "MySQL"
-4. Open the link "localhost/phpmyadmin/"
-5. Click on new at sidebar and create a database name "burgerorderingsystem"
-6. After clicking database click import and select the file "burgerorderingsystem.sql"
-4. Open the link "localhost/OnlineBurgerOrderingSystem/"
-8. Now register and login!!
+# Online Burger Ordering System
 
-Admin Credentials: admin, admin@123
+The Online Burger Ordering System is a web application designed to facilitate seamless burger (or any food) ordering and delivery management. It offers a user-friendly interface for customers to browse the menu, add items to their cart, make payments, and track their orders. Administrators can manage menu items, update prices, and oversee the status of orders.
 
-Assets: Images used in web
 
-account.php: Users can see their details, and Customers can see their bookings.
+## File Descriptions
 
-burgers.php: Will be used by to update price of items, or add discounts. [NOT YET ADDED]
+- **Assets/**: Images used in web
+- **account.php**: Users can view their details, and customers can see their bookings.
+- **cart.php**: Users can see items added to their cart, including tax and net amount, and then proceed to payment.
+- **config.php**: Configures the database connection for the website.
+- **delivered.php**: Updates the status of an order to delivered.
+- **index.php**: Welcome page of the application.
+- **login.php**: Allows users to log in using their username and password.
+- **logout.php**: Allows users to log out.
+- **outForDelivery.php**: Updates the status of an order to out for delivery.
+- **payment.php**: [Dummy payment] Enables users to pay for their orders using a card.
+- **register.php**: Allows users to create an account.
+- **sales.php**: Manages orders within the system.
+- **store.php**: Users can select items and add them to their cart.
+- **style.css**: Contains the stylesheet for the entire project.
+- **success.php**: Displays a payment successful page.
 
-cart.php: Can see items added to cart, tax and net amount. And then can proceed to payment.php.
+## Admin Credentials
 
-config.php: Configures database to website.
+- **Username:** admin
+- **Password:** admin@123
 
-delivered.php: To update status of order to delivered.
+## Getting Started
 
-index.php: Welcome page.
+### Step 1: Download & Install XAMPP
 
-login.php: To login using username and password.
+1. Download XAMPP from [Apache Friends](https://www.apachefriends.org/).
+2. Install XAMPP in the default directory: `C:\xampp`.
 
-logout.php: To logout.
+### Step 2: Clone the Repository
 
-outForDelivery.php: To update status of order to Out for Delivery.
+1. Clone the project repository to the `C:\xampp\htdocs\`:
+    ```sh
+    git clone https://github.com/pratham-jaiswal/OnlineBurgerOrderingSystem.git
+    ```
 
-payment.php: To pay for order using card.
+### Step 3: Start XAMPP
 
-register.php: To create account.
+1. Open XAMPP.
+2. Start the **Apache** and **MySQL** services by clicking the respective "Start" buttons.
 
-sales.php: To manage orders.
+### Step 4: Setup the Database
 
-store.php: To select items from and add them to cart.
+1. Open your web browser and go to:
+    ```
+    localhost/phpmyadmin/
+    ```
+2. In the sidebar, click on "New" to create a new database.
+3. Name the database **burgerorderingsystem**.
+4. After creating the database, click on the database name to open it.
+5. Go to the "Import" tab and import the `burgerorderingsystem.sql` file.
 
-style.css: The whole stylesheet of this project.
+### Step 5: Launch the Application
 
-success.php: Payment successful page.
+1. Open your web browser and go to:
+    ```
+    localhost/OnlineBurgerOrderingSystem/
+    ```
+2. Register a new account and log in to start using the Online Burger Ordering System.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/pratham-jaiswal/OnlineBurgerOrderingSystem/blob/main/LICENSE) file for details.
